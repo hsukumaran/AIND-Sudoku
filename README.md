@@ -3,11 +3,13 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: Constraint propagation is about applying same constraint over and over until a solution state is reached or the same constraint can no longer be used. We use this strategy recursively to eliminate and apply 'only choice' till we reach the solution. If we found naked twin in this process which is to identify a pair of boxes belonging to the same set of peers that have the same 2 numbers as possibilities. Eliminate these two numbers from all the boxes that have these two boxes as peers.
+
+First we identify all boxes that have only 2 elements. Next we identify which boxes among these have the same elements to get naked twins. Once we get the naked twins, we remove the corresponding digits from all the boxes that are peers to both the twins.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: Diagonal contraint has been included as an additional unit, so that all the diagonal entries will have the corresponding diagonal entries as their peers. Along with rows, columns and square units, diagonal units will also be validated. This will help in finding a solution that will also check the diagonal constraints. 
 
 ### Install
 
